@@ -1,4 +1,4 @@
-/* SmoothScroll Cuy*/
+/* SmoothScroll*/
 
 if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
 
