@@ -1,5 +1,3 @@
-/* sticky js san */
-
 (function($) {
     var slice = Array.prototype.slice; // save ref to original slice()
     var splice = Array.prototype.splice; // save ref to original slice()
