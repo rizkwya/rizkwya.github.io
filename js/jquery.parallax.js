@@ -1,3 +1,5 @@
+/* parakkax ini wir */
+
 (function( $ ){
 	var $window = $(window);
 	var windowHeight = $window.height();
