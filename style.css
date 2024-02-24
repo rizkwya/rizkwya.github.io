@@ -68,11 +68,6 @@ header {
     display: none;
 }
 
-section {
-    display: grid;
-    align-content: center;
-}
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -199,6 +194,8 @@ section {
 }
 
 .container2 {
+    display: grid;
+    align-content: center;
     height: 100vh;
     width: 500px;
     margin: 0 auto;
