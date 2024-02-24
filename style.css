@@ -68,6 +68,24 @@ header {
     display: none;
 }
 
+section {
+    display: grid;
+    align-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.7s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .container1 {
     height: 100vh;
     display: flex;
@@ -181,8 +199,9 @@ header {
 }
 
 .container2 {
+    height: 100vh;
     width: 500px;
-    margin: 60px auto;
+    margin: 0 auto;
     color: #fff;
     padding: 20px;
 }
