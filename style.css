@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    position: relative;
     background: #1a1a1a;
     color: white;
     --sb-size: 0px;
@@ -257,6 +258,17 @@ header {
 .javascript {
     width: 15%;
     animation: javascript 3s;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
 }
 
 /* ANIMATIONS SECTION */
