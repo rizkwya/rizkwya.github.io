@@ -53,12 +53,15 @@ header {
     transition: .3s;
 }
 
-.navbar a:hover,
 .navbar a.active {
     color: #b5734c;
 }
 
 .terkadang {
+    cursor: pointer;
+}
+
+.nav-link {
     cursor: pointer;
 }
 
@@ -277,37 +280,41 @@ header {
 }
 
 @keyframes cplusplus {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 80%;
     }
 }
 
 @keyframes lua {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 70%;
     }
 }
 
 @keyframes python {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 50%;
     }
 }
 
 @keyframes javascript {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 15%;
     }
 }
