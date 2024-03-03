@@ -41,6 +41,9 @@ window.onscroll = checkScroll;
 
 function checkScroll() {
     const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let currentSection = '';
 
     sections.forEach(sec => {
         const top = window.scrollY;
@@ -49,8 +52,31 @@ function checkScroll() {
 
         if (top >= offset && top < offset + height) {
             sec.classList.add('show');
+            currentSection = sec.getAttribute('id');
         } else {
             sec.classList.remove('show');
         }
     });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-target') === currentSection) {
+            link.classList.add('active');
+            document.title = "Rizk (" + currentSection.charAt(0).toUpperCase() + currentSection.slice(1) + ")";
+        }
+    });
 }
+
+document.getElementById('x').addEventListener('click', function () {
+    var sectionTujuan = document.querySelector('#home');
+    if (sectionTujuan) {
+        sectionTujuan.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+document.getElementById('o').addEventListener('click', function () {
+    var sectionTujuan = document.querySelector('#skills');
+    if (sectionTujuan) {
+        sectionTujuan.scrollIntoView({ behavior: 'smooth' });
+    }
+});
