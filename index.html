@@ -20,9 +20,10 @@
     <meta name="twitter:image" content="https://rizkwya.xyz/images/20240212_001006.png">
     <meta name="theme-color" content="#ffffff">
     <title>Rizk (Website)</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -30,9 +31,9 @@
         <a href="#" class="logo"></a>
         <div class="fa-solid fa-bars" id="menu-icon"></div>
         <nav class="navbar">
-            <a id="x" class="nav-link" data-target="home">Home</a>
-            <a id="o" class="nav-link" data-target="skills">Skills</a>
-            <a onclick="playPause()" class="terkadang">Music</a>
+            <a id="l" class="nav-link" data-target="home">Home</a>
+            <a id="u" class="nav-link" data-target="skills">Skills</a>
+            <a id="v" class="nav-link" data-target="music">Music</a>
             <audio id="lagu">
                 <source src="songs/home.mp3" type="audio/mpeg">
             </audio>
@@ -72,9 +73,65 @@
             </li>
         </div>
     </section>
+    <section id="music" class="container3 hidden">
+        <div class="album-cover">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/nobody.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/figureitout.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/2daysintocollege.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/PushUps.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/ChicagoFreestyle.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/whatsthemove.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://rizkwya.xyz/images/ichooseyou.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="music-player">
+            <h1>Title</h1>
+            <p>Song Name</p>
+    
+            <audio id="song">
+                <source src="sound/runtuh.mp3" type="audio/mpeg" />
+            </audio>
+    
+            <input type="range" value="0" id="progress" />
+    
+            <div class="controls">
+                <button class="backward">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="play-pause-btn">
+                    <i class="fa-solid fa-play" id="controlIcon"></i>
+                </button>
+                <button class="forward">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+        </div>
+        </body>
+    </section>
     <footer class="footer">
         <p>Another Day, Another Opportunity</p>
     </footer>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
     <script src="script.js"></script>
 </body>
 
