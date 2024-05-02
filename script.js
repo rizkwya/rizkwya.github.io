@@ -107,10 +107,10 @@ const songs = [
     },
 
     {
-        title: "WHAT'S THE MOVE?",
-        name: "The Kid LAROI, Future, BabyDrill",
+        title: "Life Story",
+        name: "Prinz",
         source:
-            "https://rizkwya.xyz/songs/whatsthemove.mp3",
+            "https://rizkwya.xyz/songs/lifestory.mp3",
     },
     {
         title: "I Choose You (Acoustic)",
@@ -133,10 +133,11 @@ function updateSongInfo() {
 song.addEventListener("ended", function () {
     currentSongIndex = (currentSongIndex) % songs.length;
     updateSongInfo();
-    forwardButton.click();
 
     if (currentSongIndex === 6) {
         playPauseButton.click();
+    } else {
+        forwardButton.click();
     }
 });
 
