@@ -16,7 +16,6 @@ html {
 }
 
 body {
-    overflow: hidden;
     position: relative;
     background: #1a1a1a;
     color: white;
