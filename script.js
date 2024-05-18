@@ -1,3 +1,54 @@
+const progress = document.getElementById("progress");
+const song = document.getElementById("song");
+const controlIcon = document.getElementById("controlIcon");
+const playPauseButton = document.querySelector(".play-pause-btn");
+const forwardButton = document.querySelector(".controls button.forward");
+const backwardButton = document.querySelector(".controls button.backward");
+const songName = document.querySelector(".music-player h1");
+const artistName = document.querySelector(".music-player p");
+const songs = [
+    {
+        title: "Nobody",
+        name: "OneRepublic",
+        source: "https://rizkwya.xyz/songs/nobody.mp3",
+    },
+    {
+        title: "Figure It Out",
+        name: "ian",
+        source: "https://rizkwya.xyz/songs/FigureItOut.mp3",
+    },
+    {
+        title: "2 days into college",
+        name: "Aimee Carty",
+        source:
+            "https://rizkwya.xyz/songs/2daysintocollege.mp3",
+    },
+    {
+        title: "Push Ups",
+        name: "Drake",
+        source:
+            "https://rizkwya.xyz/songs/PushUps.mp3",
+    },
+    {
+        title: "Chicago Freestyle",
+        name: "Drake, Giveon",
+        source:
+            "https://rizkwya.xyz/songs/ChicagoFreestyle.mp3",
+    },
+
+    {
+        title: "Life Story",
+        name: "Prinz",
+        source:
+            "https://rizkwya.xyz/songs/lifestory.mp3",
+    },
+    {
+        title: "I Choose You (Acoustic)",
+        name: "Kiana Ledé",
+        source:
+            "https://rizkwya.xyz/songs/ichooseyou.mp3",
+    },
+];
 const style = `
     background: transparent;
     padding: 12px;
@@ -54,7 +105,7 @@ document.getElementById('l').addEventListener('click', function () {
 });
 
 document.getElementById('u').addEventListener('click', function () {
-    var sectionTujuan = document.querySelector('#skills');
+    var sectionTujuan = document.querySelector('#project');
     if (sectionTujuan) {
         sectionTujuan.scrollIntoView({ behavior: 'smooth' });
     }
@@ -66,59 +117,6 @@ document.getElementById('v').addEventListener('click', function () {
         sectionTujuan.scrollIntoView({ behavior: 'smooth' });
     }
 });
-
-const progress = document.getElementById("progress");
-const song = document.getElementById("song");
-const controlIcon = document.getElementById("controlIcon");
-const playPauseButton = document.querySelector(".play-pause-btn");
-const forwardButton = document.querySelector(".controls button.forward");
-const backwardButton = document.querySelector(".controls button.backward");
-const songName = document.querySelector(".music-player h1");
-const artistName = document.querySelector(".music-player p");
-
-const songs = [
-    {
-        title: "Nobody",
-        name: "OneRepublic",
-        source: "https://rizkwya.xyz/songs/nobody.mp3",
-    },
-    {
-        title: "Figure It Out",
-        name: "ian",
-        source: "https://rizkwya.xyz/songs/FigureItOut.mp3",
-    },
-    {
-        title: "2 days into college",
-        name: "Aimee Carty",
-        source:
-            "https://rizkwya.xyz/songs/2daysintocollege.mp3",
-    },
-    {
-        title: "Push Ups",
-        name: "Drake",
-        source:
-            "https://rizkwya.xyz/songs/PushUps.mp3",
-    },
-    {
-        title: "Chicago Freestyle",
-        name: "Drake, Giveon",
-        source:
-            "https://rizkwya.xyz/songs/ChicagoFreestyle.mp3",
-    },
-
-    {
-        title: "Life Story",
-        name: "Prinz",
-        source:
-            "https://rizkwya.xyz/songs/lifestory.mp3",
-    },
-    {
-        title: "I Choose You (Acoustic)",
-        name: "Kiana Ledé",
-        source:
-            "https://rizkwya.xyz/songs/ichooseyou.mp3",
-    },
-];
 
 let currentSongIndex = 3;
 
