@@ -31,7 +31,7 @@
         <div class="fa-solid fa-bars" id="menu-icon"></div>
         <nav class="navbar">
             <a id="l" class="nav-link" data-target="home">Home</a>
-            <a id="u" class="nav-link" data-target="skills">Skills</a>
+            <a id="u" class="nav-link" data-target="project">Project</a>
             <a id="v" class="nav-link" data-target="music">Music</a>
         </nav>
     </header>
@@ -43,30 +43,27 @@
                 Started learning programming when i was 8 years old.</p>
         </div>
         <div class="daerah-sosial">
-            <a href="https://www.instagram.com/rizkwya" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@rizkwya" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://github.com/rizkwya" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/rizkwya" target="_blank" draggable="false"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@rizkwya" target="_blank" draggable="false"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/rizkwya" target="_blank" draggable="false"><i class="fa-brands fa-github"></i></a>
         </div>
     </section>
-    <section id="skills" class="container2 hidden">
-        <div class="daerah-skill">
-            <h1>Rizk's Skill</h1>
-            <li>
-                <h3>C++</h3>
-                <span class="bar"><span class="cplusplus"></span></span>
-            </li>
-            <li>
-                <h3>Lua</h3>
-                <span class="bar"><span class="lua"></span></span>
-            </li>
-            <li>
-                <h3>Python</h3>
-                <span class="bar"><span class="python"></span></span>
-            </li>
-            <li>
-                <h3>JavaScript</h3>
-                <span class="bar"><span class="javascript"></span></span>
-            </li>
+    <section id="project" class="container2 hidden">
+        <div class="card">
+            <img src="https://rizkwya.xyz/images/Rovision.png" draggable="false">
+            <div class="card-content">
+                <h3>Rovision</h3>
+                <p>A Beautiful shaders to run on Roblox. *Using NVIDIA Freestyle</p>
+                <a href="https://github.com/rizkwya/Rovision" target="_blank" draggable="false" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://rizkwya.xyz/images/Roinstance.png" draggable="false">
+            <div class="card-content">
+                <h3>Roinstance</h3>
+                <p>A Method for running Multiple-Instance in Roblox.</p>
+                <a href="https://github.com/rizkwya/Roinstance" target="_blank" draggable="false" class="btn">Read More</a>
+            </div>
         </div>
     </section>
     <section id="music" class="container3 hidden">
@@ -74,40 +71,40 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/nobody.jpg" />
+                        <img src="https://rizkwya.xyz/images/nobody.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/figureitout.jpg" />
+                        <img src="https://rizkwya.xyz/images/figureitout.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/2daysintocollege.jpg" />
+                        <img src="https://rizkwya.xyz/images/2daysintocollege.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/PushUps.jpg" />
+                        <img src="https://rizkwya.xyz/images/PushUps.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/ChicagoFreestyle.jpg" />
+                        <img src="https://rizkwya.xyz/images/ChicagoFreestyle.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/lifestory.jpg" />
+                        <img src="https://rizkwya.xyz/images/lifestory.jpg" draggable="false" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://rizkwya.xyz/images/ichooseyou.jpg" />
+                        <img src="https://rizkwya.xyz/images/ichooseyou.jpg" draggable="false" />
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <div class="music-player">
             <h1></h1>
             <p></p>
-    
+
             <audio id="song">
                 <source src="" type="audio/mpeg" />
             </audio>
-    
+
             <input type="range" value="0" id="progress" />
-    
+
             <div class="controls">
                 <button class="backward">
                     <i class="fa-solid fa-backward"></i>
@@ -120,7 +117,6 @@
                 </button>
             </div>
         </div>
-        </body>
     </section>
     <footer class="footer">
         <p>Another Day, Another Opportunity</p>
