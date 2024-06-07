@@ -77,7 +77,7 @@ function checkScroll() {
 
     sections.forEach(sec => {
         const top = window.scrollY;
-        const offset = sec.offsetTop - 450;
+        const offset = sec.offsetTop - 460;
         const height = sec.offsetHeight;
 
         if (top >= offset && top < offset + height) {
